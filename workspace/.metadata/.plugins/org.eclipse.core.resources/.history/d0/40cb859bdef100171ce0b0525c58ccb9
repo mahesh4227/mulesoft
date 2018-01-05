@@ -1,0 +1,10 @@
+package add;
+
+public class Addition {
+	@WebMethod
+	public int sum(int a,int b)
+	{
+		return a+b;
+	}
+
+}

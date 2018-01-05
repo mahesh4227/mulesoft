@@ -1,0 +1,6 @@
+#** GENERATED CONTENT ** Mule Application Deployment Descriptor
+#Tue Jan 02 11:52:46 IST 2018
+redeployment.enabled=true
+encoding=UTF-8
+config.resources=implementation.xml,indian_airways.xml
+domain=default

@@ -1,0 +1,53 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/516bf5c8-7ab3-4956-ac59-abfd13200b8b # 
+title: American Flights Api
+version: 1.0
+
+/flights:
+ get:
+  responses: 
+    200:
+      body: 
+        application/json:
+          example:  |
+            [{"f_id": 1,"f_name": "ER38sd", "cost": 4000},
+            {"f_id": 2,"f_name": "Mah4227", "cost": 5000},
+            {"f_id": 3,"f_name": "mahiways", "cost": 5000},
+            {"f_id": 4,"f_name": "xyz", "cost": 2000}
+            ]
+
+
+ post:
+  body: 
+    application/json:
+      example:  |
+        { "code": "G8314","price": 3999,"departureDate": "2018/01/15",
+          "origin": "Delhi","destination": "Bengaluru","emptySeats": 200,
+           "plane": {"type": "Air Asia 747", "totalSeats": 400}}
+
+  responses: 
+    201:
+      body: 
+        application/json:
+          example:  |
+            {"message": "Flight added (but not really)"}
+   
+ /{ID}:
+    get:
+      responses: 
+        200:
+          body: 
+            application/json:
+              example:  |
+                [ {"f_id": 2,"f_name": "Mah4227", "cost": 5000},
+                  {"f_id": 3,"f_name": "mahiways", "cost": 5000}]
+
+
+
+
+ 
+
+                  
+
+  
+       

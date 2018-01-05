@@ -1,0 +1,10 @@
+package add;
+
+public class Multiplication {
+
+	
+	public int mul(add)
+	{
+		return add;
+	}
+}

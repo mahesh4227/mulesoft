@@ -1,0 +1,61 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/9ffe9020-c720-4c58-bee0-3fb8404f9bd0 # 
+title: American Flights Api
+version: 1.0
+
+/flights:
+ get:
+  queryParameters: 
+    code:
+  responses: 
+    200:
+      body: 
+        application/json:
+          example:  |
+            [{"ID": 1,"code": "ER38sd", "price": 400,
+             "departureDate": "2016/03/20",	"origin": "Hyderaad",
+              "destination": "Bengaluru","emptySeats": 25,	"plane":
+              {"type": "Indigo 737","totalSeats": 250}},
+              {"ID": 2,"code": "Mah4227", "price": 4000,
+               "departureDate": "2017/12/16",	"origin": "Bengaluru",
+               "destination": "Mysore","emptySeats": 10,	"plane":
+               {"type": "jet 737","totalSeats": 150}}]
+
+
+ post:
+  body: 
+    application/json:
+      example:  |
+        { "code": "G8314","price": 3999,"departureDate": "2018/01/15",
+          "origin": "Delhi","destination": "Bengaluru","emptySeats": 200,
+           "plane": {"type": "Air Asia 747", "totalSeats": 400}}
+
+  responses: 
+    201:
+      body: 
+        application/json:
+          example:  |
+            {"message": "Flight added (but not really)"}
+   
+ /{ID}:
+    get:
+      responses: 
+        200:
+          body: 
+            application/json:
+              example:  |
+                {"ID": 1,"code": "ER38sd", "price": 400,
+                  "departureDate": "2018/03/20",	"origin": "Mumbai",
+                  "destination": "Delhi","emptySeats": 2,	"plane":
+                  {"type": "Deccan 737","totalSeats": 150}}
+
+
+
+
+
+ 
+
+                  
+
+  
+       

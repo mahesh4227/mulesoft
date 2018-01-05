@@ -1,0 +1,5 @@
+authenticated.users=[{"token"\:"253e9fef-890a-4e3e-8812-05da3b79bc18","userId"\:"M1043173","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=253e9fef-890a-4e3e-8812-05da3b79bc18
+current.user=M1043173
+eclipse.preferences.version=1
+org.mule.tooling.amc.apps={"userProjectMap"\:{"M1043173"\:{"indian-airways"\:"{\\"applicationName\\"\:\\"indian-airways\\",\\"muleRuntime\\"\:\\"3.8.5\\",\\"properties\\"\:{\\"env\\"\:\\"MAHI\\"}}"}}}

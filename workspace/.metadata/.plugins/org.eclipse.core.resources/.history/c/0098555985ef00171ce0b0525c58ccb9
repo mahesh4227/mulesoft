@@ -1,0 +1,5 @@
+#Tue Jan 02 10:11:36 IST 2018
+encoding=UTF-8
+domain=default
+redeployment.enabled=true
+config.resources=indian_airways.xml,flights.xml

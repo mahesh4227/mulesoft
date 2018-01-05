@@ -1,0 +1,14 @@
+package add;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+class Addition {
+	  @WebMethod
+	  @WebService
+	public int sum(int a,int b)
+	{
+		return a+b;
+	}
+
+}

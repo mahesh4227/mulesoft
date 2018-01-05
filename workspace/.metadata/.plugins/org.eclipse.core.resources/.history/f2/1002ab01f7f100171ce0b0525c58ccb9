@@ -1,0 +1,16 @@
+package add;
+
+import javax.jws.WebMethod;
+
+class Addition {
+	  @WebMethod
+	public int sum(int a,int b)
+	{
+		 return a+b;
+	}
+	  public void display(int add)
+	  {
+		  System.out.println(add);
+	  }
+
+}
